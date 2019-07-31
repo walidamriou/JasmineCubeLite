@@ -1,2 +1,2 @@
-# Cube-for-smart-room
+# JasmineCube
 Cube for smart room
