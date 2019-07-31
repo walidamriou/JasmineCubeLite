@@ -1,4 +1,4 @@
-# JasmineCube
+# Jasmine Cube Lite
 Cube for smart room
 * __Software__:
 1. Desktop:
