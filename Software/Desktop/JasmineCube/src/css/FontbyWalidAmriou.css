@@ -1,0 +1,8 @@
+@font-face {
+src: url("../css/fonts/Roboto-Light.ttf");
+}
+
+#about {
+  -fx-font-size: 30px;
+  -fx-font-family: "Roboto Light";
+}

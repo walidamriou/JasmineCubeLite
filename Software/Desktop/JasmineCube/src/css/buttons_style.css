@@ -1,0 +1,59 @@
+@font-face {
+src: url("../css/fonts/DroidKufi-Regular.ttf");
+}
+
+.label {
+-fx-font-family: "Droid Arabic Kufi";
+}
+
+#circle {
+    -fx-font-size: 16px;
+    -fx-font-family: "Droid Arabic Kufi";
+    -fx-background-radius:15;
+    -fx-background-color: #9ea068;
+    -fx-alignment: center ;
+}
+#circleplay {
+    -fx-font-size: 16px;
+    -fx-font-family: "Droid Arabic Kufi";
+    -fx-background-radius:50;
+    -fx-background-color: #9ea068;
+    -fx-alignment: center ;
+}
+#normal {
+    -fx-font-size: 16px;
+    -fx-font-family: "Droid Arabic Kufi";
+    -fx-background-radius:50;
+    -fx-background-color: #E91E63;
+    -fx-alignment: center ;
+}
+#exit {
+    -fx-font-size: 16px;
+    -fx-font-family: "Droid Arabic Kufi";
+    -fx-background-radius:50;
+    -fx-background-color: #EEEEEE;
+    -fx-alignment: center ;
+}
+
+#buttonListMetrial {
+    -fx-font-family: "Droid Arabic Kufi";
+    -fx-background-radius:50;
+    -fx-background-color: #3F51B5;
+    -fx-alignment: center ;
+}
+#blueback {
+    -fx-font-size: 20px;
+    -fx-background-radius:50;
+    -fx-background-color: #E91E63;
+    -fx-alignment: center ;
+}
+#text {
+    -fx-font-family: "Droid Arabic Kufi";
+    -fx-font-size: 16px;
+    -fx-alignment: center ;
+}
+#Roboto {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 16px;
+    -fx-alignment: center ;
+}

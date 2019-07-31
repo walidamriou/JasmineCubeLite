@@ -1,0 +1,8 @@
+@font-face {
+src: url("../css/fonts/Roboto-Regular.ttf");
+}
+
+#TextCube {
+  -fx-font-size: 35px;
+  -fx-font-family: "Roboto";
+}

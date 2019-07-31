@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #673AB7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxarduino.FXMLDocumentController">
+    <children>
+      <Text id="TextJasmine" fill="WHITE" layoutX="98.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jasmine">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <JFXComboBox id="font" fx:id="ListPortes" focusColor="WHITE" labelFloat="true" layoutX="782.0" layoutY="45.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="41.0" prefWidth="132.0" promptText="إختر مدخل USB" style="-fx-background-color: #ffff;" unFocusColor="WHITE">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></JFXComboBox>
+      <JFXButton id="normal" fx:id="btnConectar" buttonType="RAISED" layoutX="605.0" layoutY="40.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#conectar" style="-fx-background-color: #3F51B5;" stylesheets="@../css/buttons_style.css" text="الإتصال بالمكعب" textFill="WHITE" />
+      <Text id="about" fill="#e1e1e1" layoutX="101.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20px;" text="by Walid Amriou">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <Text id="TextCube" fill="WHITE" layoutX="230.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cube">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutY="150.0" prefHeight="450.0" prefWidth="950.0" style="-fx-background-color: #eee9ea; -fx-background-radius: 50 50 0 0; -fx-effect: dropshadow(three-pass-box, gray, 5, 0, 0, 0);">
+         <children>
+            <AnchorPane layoutY="186.0" prefHeight="276.0" prefWidth="950.0" style="-fx-background-color: white; -fx-effect: dropshadow(three-pass-box, gray, 5, 0, 0, 0); -fx-background-radius: 50 50 0 0;">
+               <children>
+                  <AnchorPane layoutY="156.0" prefHeight="122.0" prefWidth="950.0" style="-fx-background-color: white; -fx-effect: dropshadow(three-pass-box, gray, 5, 0, 0, 0); -fx-background-radius: 50 50 0 0;">
+                     <children>
+                        <ImageView fitHeight="86.0" fitWidth="64.0" layoutX="853.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/Logo.png" />
+                           </image>
+                        </ImageView>
+                        <Text id="textinside" fill="#323232" layoutX="695.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 12px;" text="تم تطويره من قبل عمريو وليد">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Text>
+                        <Text id="textinside" fill="#323232" layoutX="705.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 12px;" text="نسخة مخصصة للغرف الذكية">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Text>
+                        <Text id="textinside" fill="#323232" layoutX="732.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 12px;" text="www.walidamriou.com">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="809.0" layoutY="51.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: green; -fx-background-radius: 30;">
+                     <children>
+                        <Text id="textinside" fill="#323232" layoutX="50.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="°C">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="29.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/thermometer.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="684.0" layoutY="54.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: green; -fx-background-radius: 30;" />
+                  <Text id="textinside" fill="#323232" layoutX="537.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="°C">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Text id="textinside" fill="#323232" layoutX="515.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="000">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Text id="textinside" fill="#323232" layoutX="600.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pa">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Text id="textinside" fill="#323232" layoutX="701.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="000">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Text id="textinside" fill="#323232" layoutX="738.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\%">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Text id="textinside" fill="#323232" layoutX="788.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="بيانات الغرفة">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Text id="textinside" fill="#323232" layoutX="832.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Text id="textinside" fill="#323232" layoutX="330.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="O2">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Text id="textinside" fill="#323232" layoutX="79.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="000">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Text id="textinside" fill="#323232" layoutX="121.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="candela" wrappingWidth="72.99999877810478">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="709.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/humidity.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="572.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/gauge.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="438.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/co2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="121.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/candle.png" />
+                     </image>
+                  </ImageView>
+                  <Text id="textinside" fill="#323232" layoutX="429.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="000">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Text id="textinside" fill="#323232" layoutX="466.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pa">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Text id="textinside" fill="#323232" layoutX="306.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="000">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Text id="textinside" fill="#323232" layoutX="343.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pa">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <JFXButton id="circle" fx:id="btUpdateData" buttonType="RAISED" layoutX="679.0" layoutY="3.0" onAction="#UpdateData" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #FF5722; -fx-font-size: 12PX;" stylesheets="@../css/buttons_style.css" text="تحديث البيانات" textFill="WHITE" />
+                  <Text id="textinside" fx:id="testTextid" fill="#323232" layoutX="205.0" layoutY="40.0" onDragDetected="#testText" strokeType="OUTSIDE" strokeWidth="0.0" text="candela" wrappingWidth="72.99999877810478">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <JFXButton id="circle" fx:id="btnLigarLed" buttonType="RAISED" layoutX="800.0" layoutY="122.0" onAction="#ligarLed" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #FF5722; -fx-font-size: 12PX;" stylesheets="@../css/buttons_style.css" text="مصباح المكعب" textFill="WHITE" />
+            <JFXButton id="circle" buttonType="RAISED" layoutX="692.0" layoutY="122.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #FF9800; -fx-font-size: 12PX;" stylesheets="@../css/buttons_style.css" text="مصباح الغرفة" textFill="WHITE" />
+            <JFXButton id="circle" buttonType="RAISED" layoutX="256.0" layoutY="122.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #E91E63; -fx-font-size: 12Px;" stylesheets="@../css/buttons_style.css" text="المقبس 1" textFill="WHITE" />
+            <JFXButton id="circle" buttonType="RAISED" layoutX="366.0" layoutY="122.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #03A9F4; -fx-font-size: 12px;" stylesheets="@../css/buttons_style.css" text="قفل الباب" textFill="WHITE" />
+            <JFXButton id="circle" buttonType="RAISED" layoutX="583.0" layoutY="122.0" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: #2196F3; -fx-font-size: 12px;" stylesheets="@../css/buttons_style.css" text="الستائر" textFill="WHITE" />
+            <JFXButton id="circle" buttonType="RAISED" layoutX="475.0" layoutY="122.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #009688; -fx-font-size: 12px;" stylesheets="@../css/buttons_style.css" text="الإضاءة الخلفية" textFill="WHITE" />
+            <Text id="textinside" fill="#323232" layoutX="768.0" layoutY="31.0" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="التحكم بالأشياء">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Text>
+            <JFXButton id="circleplay" layoutX="87.0" layoutY="374.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: black;" stylesheets="@../css/buttons_style.css" text="تشغيل" textFill="WHITE" />
+            <JFXButton id="circleplay" layoutX="28.0" layoutY="394.0" prefHeight="50.0" prefWidth="50.0" style="-fx-font-size: 10px;" stylesheets="@../css/buttons_style.css" text="السابق" />
+            <JFXButton id="circleplay" layoutX="174.0" layoutY="395.0" prefHeight="50.0" prefWidth="50.0" style="-fx-font-size: 10px;" stylesheets="@../css/buttons_style.css" text="التالي" textFill="#030303" />
+            <Text id="textinside" layoutX="87.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 12px;" text="مشغل الصوتيات">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Text>
+            <JFXButton id="circle" buttonType="RAISED" layoutX="149.0" layoutY="122.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #E91E63; -fx-font-size: 12Px;" stylesheets="@../css/buttons_style.css" text="المقبس 2" textFill="WHITE" />
+            <JFXButton id="circle" buttonType="RAISED" layoutX="40.0" layoutY="122.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #E91E63; -fx-font-size: 12px;" stylesheets="@../css/buttons_style.css" text="المروحة" textFill="WHITE" />
+            <ImageView fitHeight="86.0" fitWidth="64.0" layoutX="818.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/cubeLed.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="64.0" layoutX="710.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/light-bulb.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="64.0" layoutX="601.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/window.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="64.0" layoutX="493.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/christmas.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="64.0" layoutX="390.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/door-lock.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="64.0" layoutX="274.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/socket.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="64.0" layoutX="167.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/socket.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="64.0" layoutX="58.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/ventilator.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="80.0" fitWidth="73.0" layoutX="23.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/cube.png" />
+         </image>
+      </ImageView>
+      <JFXButton id="normal" fx:id="ReloadListPortes" buttonType="RAISED" layoutX="421.0" layoutY="40.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#ReloadListPortesAction" style="-fx-background-color: #3F51B5;" stylesheets="@../css/buttons_style.css" text="تحديث قائمة المداخل" textFill="WHITE" />
+    </children>
+   <stylesheets>
+      <URL value="@../css/fonts.css" />
+      <URL value="@../css/FontJasmine.css" />
+      <URL value="@../css/FontCube.css" />
+      <URL value="@../css/FontbyWalidAmriou.css" />
+   </stylesheets>
+</AnchorPane>

@@ -1,0 +1,20 @@
+@font-face {
+src: url("../css/fonts/DroidKufi-Regular.ttf");
+}
+
+.label {
+-fx-font-family: "Droid Arabic Kufi";
+}
+.jfx-text-field, .jfx-password-field {
+-fx-font-family: "Droid Arabic Kufi";
+}
+
+#font {
+  -fx-font-size: 13px;
+  -fx-font-family: "Droid Arabic Kufi";
+}
+
+#textinside {
+  -fx-font-size: 20px;
+  -fx-font-family: "Droid Arabic Kufi";
+}
