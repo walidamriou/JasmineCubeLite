@@ -3,6 +3,7 @@ Cube besed low microcontroller for smart rooms with software to control it
 
 ------------------------------------------------------------------------------------------------
 * I paused to develop this project because this project is like make a gateway of IoT, and Mozilla make a open source project call Mozilla web things, and it is like my project but more flexible, I think to make a version of my project besed the mozilla project.
+* I develeped this project before Mozilla start Mozilla web things but I published it to github in 31/07/2019
 ------------------------------------------------------------------------------------------------
 
 
